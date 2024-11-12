@@ -1,0 +1,123 @@
+  .nav-link{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  /* small device */
+  @media (max-width:767px) {
+    .navbar-nav+button{
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .nav-link{
+      margin-top: 5px;
+    }
+    .nav-link:hover{
+      background-color: rgb(189, 230, 230);
+      border-radius: 10px;
+      transform: scaleY(1.5);
+      font-size: 1.3rem;
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #logo{
+    height:6rem;
+    border: 2px solid yellow;
+    border-radius: 10px;
+  }
+  }
+  
+  @media (min-width:992px)
+  {
+    .navbar-nav{
+      gap:3rem;
+    }
+   
+    .nav-link:hover{
+      background-color: rgb(189, 230, 230);
+      border-radius: 10px;
+      transform: scale(2);
+      font-size: 1.3rem;
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar-nav+button{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+  }
+  .navbar-nav+button:hover{
+    font-size: 1.5rem;
+  }
+  #logo{
+    height:8rem;
+    width: 10rem;
+    border: 2px solid yellow;
+    border-radius: 20px;
+  }
+  .navbar{
+    height: 6rem;
+  }
+  }
+  
+  #carouselExampleCaptions .carousel-inner {
+      height: 680px;
+    
+    }
+    #carouselExampleCaptions .carousel-item img {
+      object-fit: cover; 
+      height: 42rem;
+      width: 100%; 
+    
+    }
+    .best-seller-container .row {
+      display: flex;
+      overflow-x: auto;
+      /* white-space: nowrap; */
+      flex-wrap: nowrap;
+  }
+
+  .best-seller-container .col-12 {
+      flex: 0 0 auto; 
+      width: 18rem; 
+      margin-right: 1rem; 
+  }
+  .card-body p:nth-child(2)
+  {
+    background-color: rgb(222, 221, 221)  ;
+  }
+  .women,.men{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .navbar{
+    height: 5rem;
+  }
+ 
+   */
+  /* #logo{
+    height: 12rem;
+    border: 2px solid yellow;
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+    #logo {
+      height: 5rem;  
+    
+      width: auto;
+    }
+  } */
+
+  .logo
+{
+    height: 6rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: rgb(169, 174, 177);
+}
