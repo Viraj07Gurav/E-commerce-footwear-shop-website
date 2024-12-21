@@ -9,79 +9,120 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mainpageStyle.css">
     <link rel="stylesheet" href="menStyle.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="../JS/men.js" defer></script>
 </head>
 <style>
     img{
         height: 26rem;
     }
+    /* .card-img-top{
+        height: 20rem;
+    } */
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg "> <!--fixed navbar-->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logo.jpg" id="logo"></a>    
+            <a class="navbar-brand" href="main.html"><img src="logo New.png" id="logo" height="4rem"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex justify-content-center ">
-                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
-                    <a class="nav-link" href="#men-cnt">Men</a>
-                    <a class="nav-link" href="#women-cnt">Women</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" id="men" href="#men-cnt">Men</a>
+                    <a class="nav-link" id="women" href="#women-cnt">Women</a>
                     <a class="nav-link" href="#bestseller-cnt">Best seller</a>
-                    <a class="nav-link" href="#">Sale</a>
+                    <a class="nav-link" href="#sales">Sale</a>
                 </div>
-                <button class="btn btn-outline-success" type="submit">Login</button>
+                <button  id="loginBtn" class="btn btn-outline-success" type="submit">Login</button>
             </div>
-
+             <!-- nav item list -->
+    <div id="men-item" class="">
+        <ul>
+          <li>lace-up-shoe</li>
+          <hr />
+          <li>Slip-on-shoe</li>
+          <hr />
+          <li>Sandale</li>
+          <hr />
+          <li>Slipper</li>
+        </ul>
+      </div>
+      <div id="women-item" class="">
+        <ul>
+          <li>Slider</li>
+          <hr />
+          <li>Sandal</li>
+          <hr />
+          <li>Sneakers</li>
+          <hr />
+          <li>Heels</li>
+        </ul>
+      </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTR8m5j4i_eCueoAsjkTu2EayKUCp3C-H1Wz9uMN3IqqZ7R-nxh_uNKxDnlGJYX2HyhB4HCOoxinMEEbPjFfuJKsMLRhkGNcY0zuZtEhX66hGQP1qwQ0UhnDSU
-                    "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTR8m5j4i_eCueoAsjkTu2EayKUCp3C-H1Wz9uMN3IqqZ7R-nxh_uNKxDnlGJYX2HyhB4HCOoxinMEEbPjFfuJKsMLRhkGNcY0zuZtEhX66hGQP1qwQ0UhnDSU" class="card-img-top" alt="...">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Lace-up-shoe</h5>
+                            <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                            <p class="card-text text-warning">by Adidas</p>
+                            <div class="button_div">
+                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
+            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
                 <div class="card shadow" style="width: 22rem;">
                     <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQG3XvfzwHFnq4ArhI9bbvCylTY8QcRALuhbbxYpoc3RFmGoEjSYcgNHuuAeCeHvU_evRAo5Bxpa7VT9nnc7gN2Z3vwZ5Ahl3QeH48Tc68Ch_zvqs4iJqupAmg
-                    "
-                        class="card-img-top" alt="...">
+                    " class="card-img-top" alt="...">
                     <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
                 <div class="card shadow" style="width: 22rem;">
                     <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQvOuqsiSaiTUtAU6Lr7tDgDII3HCw6Kqy_rdMm130LqaBD_FCtZe0PYJEisogtpEmwoVjC3VJ5vRv1Oqx0UJpcVC2ZJbnpI2Yp4kaV9JQ9tDF7sjHxKQXh2A
-                    "
-                     class="card-img-top" alt="...">
+                    " class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
                 <div class="card shadow" style="width: 22rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQNb016cBj0PJjmu4G1YGBpQ4RQXTbuZVXIjWWCst2r4u0azDYGDj9laFsVAW6a4t6R3-za1jTzdQ23M4AdJWpTIN64LNyVmhoMFmiRZ5g9tcrOu1M1d5EZtMo
-                    "
-                    class="card-img-top" alt="...">
+                    " class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,11 +130,15 @@
             <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
                 <div class="card shadow" style="width: 22rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQNb016cBj0PJjmu4G1YGBpQ4RQXTbuZVXIjWWCst2r4u0azDYGDj9laFsVAW6a4t6R3-za1jTzdQ23M4AdJWpTIN64LNyVmhoMFmiRZ5g9tcrOu1M1d5EZtMo
-                    "
-                    class="card-img-top" alt="...">
+                    " class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,12 +146,15 @@
             <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
                 <div class="card shadow" style="width: 22rem;">
                     <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSyzUIrDbqe7_x4lkDfSeS1NkK2Y_EOAE4MiSQmqQNhVdawat8THGQ0e6uBWoU7yBNaka1I3oGiYy4_5f_-Tystw2XaKZVaNjA6qA68bldX7X8NvzI6pCDv2g
-                    "
-                     class="card-img-top" alt="...">
+                    " class="card-img-top" alt="...">
                     <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,8 +164,13 @@
                     "
                     class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,8 +180,13 @@
                     "
                     class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Lace-up-shoe</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>

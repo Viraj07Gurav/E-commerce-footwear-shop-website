@@ -9,133 +9,201 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mainpageStyle.css">
     <link rel="stylesheet" href="menStyle.css">
+    <script src="../JS/men.js" defer></script>
      <style>
-        /* img{
+        img{
             height: 26rem;
-        } */
+        }
          
      </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg "> <!--fixed navbar-->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logo.jpg" id="logo"></a>    
+            <a class="navbar-brand" href="main.html"><img src="logo New.png" id="logo" height="4rem"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex justify-content-center ">
-                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
-                    <a class="nav-link" href="#men-cnt">Men</a>
-                    <a class="nav-link" href="#women-cnt">Women</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" id="men" href="#men-cnt">Men</a>
+                    <a class="nav-link" id="women" href="#women-cnt">Women</a>
                     <a class="nav-link" href="#bestseller-cnt">Best seller</a>
-                    <a class="nav-link" href="#">Sale</a>
+                    <a class="nav-link" href="#sales">Sale</a>
                 </div>
-                <button class="btn btn-outline-success" type="submit">Login</button>
+                <button  id="loginBtn" class="btn btn-outline-success" type="submit">Login</button>
             </div>
-
+             <!-- nav item list -->
+    <div id="men-item" class="">
+        <ul>
+          <li>lace-up-shoe</li>
+          <hr />
+          <li>Slip-on-shoe</li>
+          <hr />
+          <li>Sandale</li>
+          <hr />
+          <li>Slipper</li>
+        </ul>
+      </div>
+      <div id="women-item" class="">
+        <ul>
+          <li>Slider</li>
+          <hr />
+          <li>Sandal</li>
+          <hr />
+          <li>Sneakers</li>
+          <hr />
+          <li>Heels</li>
+        </ul>
+      </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2Xblqvhs9vjIWPQAqBQ5PNOAzKxdlib8qWi6Jrf7p3oASoj7MgVekzrfQhqAAWgVijTQi-wOo76-x3GaoJOe1kO0sh5B5fkaY5dapPqF3wJUqhfsVKrjGnLE
-                    "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOodjGg-MiOgnfuw-dzBOXbBcGMCIyeaxnJo5uvdk81mD6RYW4QE5MS8vwoqWPlOwTqNXV-ka16fBP_zlw3Ui8LM2s2f0J2UL46aVnDv4
-                    "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTx3dw52O_SnrSoHQ3f2zYexwu3Serx2kDSkicZIZAd3kGf8BPi8B-bCR9SidEbRvoZHMBp837SLx1DJOmm9wl59hIJeqqZzxYxab32SI75gMIiuaNooZMlWnts
-                    "
-                     class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRm0NzgW6RaINyavOAAsUvkK9BNUWRm5W7hz5SrD5xTma6TvsfXgp0RBTO5L79kR-lLP9UUXjyWDHbp7lGuLT8My8Bgg-UtkXrdge5yBwQ
-                    "
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9ptIy3emzBst9PowREwzLh0k-jnZcDIqzVuciBmw9d8Xkpy1WTxov63FyFdv_jwOBlAwoYtUKRMvpAKVp_BkFeuoiT6E3ROGS9HjkrBneOi07n-_S3jIb
-                    "
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSCxxoJdXhy9sCFYLyaASfGnGH30TP2sjOHW1PLKo7IXXnmKAPEcXWGgo5QvBhwFEl_Rl_16MpAwk7jfX9fF7wMx2yk8MJUlRxEdIK9N8T8A7-f3AZjJ6iuPcw
-                    "
-                     class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRiKQP0xLtViZFOq-5qvHFuD86VrjWgI1rJVwG0zZmudvcDQ5Oe_yghVRQZfCWrDMvwpspHkxvigjLS4AiZcPKADYjRXQrqgf2RYffGw78fJtXsqURdlswvkdE
-                    "
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS39wjZfUgGxTs_P3r71mFmmNb7kbXBOK-S68xD7XTxIqOUovabZjp-zeCuESdMm0jpGqVMrFAsQBgHZZ4PFd0m-Q_slm6B2JiREFSE_2_OBoTJmTeLR_rnc78
-                    "
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
+            <!-- Card 1 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2Xblqvhs9vjIWPQAqBQ5PNOAzKxdlib8qWi6Jrf7p3oASoj7MgVekzrfQhqAAWgVijTQi-wOo76-x3GaoJOe1kO0sh5B5fkaY5dapPqF3wJUqhfsVKrjGnLE" class="card-img-top" alt="Urban Flip-Flops">
+        <div class="card-body">
+            <h5 class="card-title">Urban Flip-Flops</h5>
+            <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+            <p class="card-text text-warning">by Adidas</p>
+            <div class="button_div  ">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Card 2 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9ptIy3emzBst9PowREwzLh0k-jnZcDIqzVuciBmw9d8Xkpy1WTxov63FyFdv_jwOBlAwoYtUKRMvpAKVp_BkFeuoiT6E3ROGS9HjkrBneOi07n-_S3jIb
+        "
+        class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Sporty Sneakers</h5>
+            <h6 class="price">Rs. <s class="old_price">1599</s> 1199</h6>
+            <p class="card-text text-warning">by Nike</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.7 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS39wjZfUgGxTs_P3r71mFmmNb7kbXBOK-S68xD7XTxIqOUovabZjp-zeCuESdMm0jpGqVMrFAsQBgHZZ4PFd0m-Q_slm6B2JiREFSE_2_OBoTJmTeLR_rnc78
+        "
+        class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Classic Leather Shoes</h5>
+            <h6 class="price">Rs. <s class="old_price">2499</s> 1899</h6>
+            <p class="card-text text-warning">by Puma</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.5 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRiKQP0xLtViZFOq-5qvHFuD86VrjWgI1rJVwG0zZmudvcDQ5Oe_yghVRQZfCWrDMvwpspHkxvigjLS4AiZcPKADYjRXQrqgf2RYffGw78fJtXsqURdlswvkdE
+        "
+        class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Stylish Sandals</h5>
+            <h6 class="price">Rs. <s class="old_price">1299</s> 999</h6>
+            <p class="card-text text-warning">by Reebok</p>
+            <div class="button_div mt-2">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.6 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS39wjZfUgGxTs_P3r71mFmmNb7kbXBOK-S68xD7XTxIqOUovabZjp-zeCuESdMm0jpGqVMrFAsQBgHZZ4PFd0m-Q_slm6B2JiREFSE_2_OBoTJmTeLR_rnc78
+                    "
+                    class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Casual Sneakers</h5>
+            <h6 class="price">Rs. <s class="old_price">1399</s> 1099</h6>
+            <p class="card-text text-warning">by Converse</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.0 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9ptIy3emzBst9PowREwzLh0k-jnZcDIqzVuciBmw9d8Xkpy1WTxov63FyFdv_jwOBlAwoYtUKRMvpAKVp_BkFeuoiT6E3ROGS9HjkrBneOi07n-_S3jIb
+        " class="card-img-top" alt="...">
+                <div class="card-body">
+            <h5 class="card-title">Running Shoes</h5>
+            <h6 class="price">Rs. <s class="old_price">1699</s> 1299</h6>
+            <p class="card-text text-warning">by Adidas</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.8 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 7 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRm0NzgW6RaINyavOAAsUvkK9BNUWRm5W7hz5SrD5xTma6TvsfXgp0RBTO5L79kR-lLP9UUXjyWDHbp7lGuLT8My8Bgg-UtkXrdge5yBwQ" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Slip-on Shoes</h5>
+            <h6 class="price">Rs. <s class="old_price">799</s> 599</h6>
+            <p class="card-text text-warning">by Skechers</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.1 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+    <div class="card shadow" style="width: 22rem;">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTx3dw52O_SnrSoHQ3f2zYexwu3Serx2kDSkicZIZAd3kGf8BPi8B-bCR9SidEbRvoZHMBp837SLx1DJOmm9wl59hIJeqqZzxYxab32SI75gMIiuaNooZMlWnts
+        "
+         class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Fashion Boots</h5>
+            <h6 class="price">Rs. <s class="old_price">2999</s> 2499</h6>
+            <p class="card-text text-warning">by Timberland</p>
+            <div class="button_div">
+                <a href="#" class="btn btn-dark">Add to cart</a>
+                <div class="btn btn-success rating">4.2 <i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    
 
     <!-- <footer start -->
         <footer class=" text-left">

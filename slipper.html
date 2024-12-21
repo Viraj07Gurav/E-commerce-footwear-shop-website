@@ -1,185 +1,222 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mainpageStyle.css">
     <link rel="stylesheet" href="menStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="../JS/men.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg "> <!--fixed navbar-->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logo.jpg" id="logo"></a>    
+            <a class="navbar-brand" href="main.html"><img src="logo New.png" id="logo" height="4rem"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex justify-content-center gap-5">
-                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
-                    <a class="nav-link" href="#men-cnt">Men</a>
-                    <a class="nav-link" href="#">Women</a>
-                    <a class="nav-link" href="#">Best seller</a>
-                    <a class="nav-link" href="#">Sale</a>
+                <div class="navbar-nav d-flex justify-content-center ">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" id="men" href="#men-cnt">Men</a>
+                    <a class="nav-link" id="women" href="#women-cnt">Women</a>
+                    <a class="nav-link" href="#bestseller-cnt">Best seller</a>
+                    <a class="nav-link" href="#sales">Sale</a>
                 </div>
-                <button class="btn btn-outline-success" type="submit">Login</button>
+                <button  id="loginBtn" class="btn btn-outline-success" type="submit">Login</button>
             </div>
-
+             <!-- nav item list -->
+    <div id="men-item" class="">
+        <ul>
+          <li>lace-up-shoe</li>
+          <hr />
+          <li>Slip-on-shoe</li>
+          <hr />
+          <li>Sandale</li>
+          <hr />
+          <li>Slipper</li>
+        </ul>
+      </div>
+      <div id="women-item" class="">
+        <ul>
+          <li>Slider</li>
+          <hr />
+          <li>Sandal</li>
+          <hr />
+          <li>Sneakers</li>
+          <hr />
+          <li>Heels</li>
+        </ul>
+      </div>
         </div>
     </nav>
-    <div class="container-fluid">
+
+    <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b22fcc7a4545407aa37efeed14c29a9a_9366/CONTARO_Ms_Grey_JJ5215_01_00_standard.jpg"
-                        class="card-img-top" alt="...">
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b22fcc7a4545407aa37efeed14c29a9a_9366/CONTARO_Ms_Grey_JJ5215_01_00_standard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Swimon Slippers</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 799</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.5 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center shadow">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPgAI3TR7OVZjx9ds79NwcO3K3a_zZ6zowMe65bPAYFoZQ2PQynMQQ-I38yfNZSUNpI6ndaI5uGFOr3tVHtq-9HRtkU8g7Gi3qQvHSt_5s
-                    "
-                        class="card-img-top" alt="...">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPgAI3TR7OVZjx9ds79NwcO3K3a_zZ6zowMe65bPAYFoZQ2PQynMQQ-I38yfNZSUNpI6ndaI5uGFOr3tVHtq-9HRtkU8g7Gi3qQvHSt_5s" class="card-img-top" alt="...">
                     <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d03f367ebd194366b8ea1d85b13004bd_9366/URBANSCAPE_FLIP-FLOPS_Turquoise_GC0263_01_standard.jpg"
-                     class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/cd2ac2688c0b4092b773ba273198e24c_9366/AQUO_SLIP_ON_M_Green_JJ5201_01_00_standard.jpg"
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Swimon Sandals</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 799</h6>
+                        <p class="card-text text-warning">by Swimon</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.0 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f989562cad794c62b2f676c58e6db48d_9366/URBANSCAPE_FLIP-FLOPS_Blue_IQ9717_01_standard.jpg"
-                    class="card-img-top" alt="...">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d03f367ebd194366b8ea1d85b13004bd_9366/URBANSCAPE_FLIP-FLOPS_Turquoise_GC0263_01_standard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Urban Flip-Flops</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 699</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.3 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  shadow ">
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cc1382e32244a70a0c2afb20093f644_9366/CLOUDFOAM_FLIP-FLOPS_Grey_GC0205_01_standard.jpg"
-                     class="card-img-top" alt="...">
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/cd2ac2688c0b4092b773ba273198e24c_9366/AQUO_SLIP_ON_M_Green_JJ5201_01_00_standard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <h5 class="card-title">Aqua Slip-On Sandals</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 799</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.7 <i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+                <div class="card shadow" style="width: 22rem;">
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f989562cad794c62b2f676c58e6db48d_9366/URBANSCAPE_FLIP-FLOPS_Blue_IQ9717_01_standard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Urban Flip-Flops Blue</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 749</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.2 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center ">
-                <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cbdb92ad239740b5a8fafda39f629835_9366/MERIDIAN_Blue_JJ5234_01_00_standard.jpg"
-                    class="card-img-top" alt="...">
-                    <div class="card-body">
 
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3  mb-5 d-flex justify-content-center  ">
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center shadow">
                 <div class="card shadow" style="width: 22rem;">
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/eca669c957114ffd93aee2412da447d5_9366/CONTARO_Ms_Turquoise_JJ5213_01_00_standard.jpg"
-                    class="card-img-top" alt="...">
+                    <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cc1382e32244a70a0c2afb20093f644_9366/CLOUDFOAM_FLIP-FLOPS_Grey_GC0205_01_standard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"><b>Price:</b>&nbsp;999/-</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Cloudfoam Flip-Flops</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 799</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.6 <i class="fa-solid fa-star"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-6 col-md-3 mb-5 d-flex justify-content-center">
+                <div class="card shadow" style="width: 22rem;">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cbdb92ad239740b5a8fafda39f629835_9366/MERIDIAN_Blue_JJ5234_01_00_standard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Meridian Flip-Flops</h5>
+                        <h6 class="price">Rs. <s class="old_price">999</s> 899</h6>
+                        <p class="card-text text-warning">by Adidas</p>
+                        <div class="button_div">
+                            <a href="#" class="btn btn-dark">Add to cart</a>
+                            <div class="btn btn-success rating">4.7 <i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
     <!-- <footer start -->
         <footer class=" text-left">
             <div class="container-fluid">
-              <div class="row">
-          
-                <div class="col-12 col-md-6 col-lg-3 text-center">
-                  <img src="logo.jpg" alt="Logo" class="logo mt-4">
-                  <div class="list-unstyled d-flex gap-4 justify-content-center">
-                    <a class="socialLogo" href="#"><i class="fa-brands fa-google shadow-sm rounded"></i></a>
-                    <a class="socialLogo" href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="socialLogo" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="socialLogo" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  </div>
-                  <h6>37, Ayur, Vigyan Nagar, New Delhi, India.</h6>
+                <div class="row">
+    
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <img src="logo New.png" alt="Logo" class="logo mt-4">
+                        <div class="list-unstyled d-flex justify-content-center gap-4">
+                            <a class="socialLogo" href="#"><i class="fa-brands fa-google shadow-sm rounded"></i></a>
+                            <a class="socialLogo" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="socialLogo" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="socialLogo" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <h6>37, Ayur, Vigyan Nagar, New Delhi, India.</h6>
+                    </div>
+    
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <h3>Get to Know Us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                            <li><a href="#">Gift a Smile</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <h3>Contact With Us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <h3>Let Us Help You</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">100% Purchase Protection</a></li>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Return Center</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+    
                 </div>
-          
-                <div class="col-6 col-md-6 col-lg-3">
-                  <h3>Get to Know Us</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Gift a Smile</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-6 col-md-6 col-lg-3">
-                  <h3>Contact With Us</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-6 col-md-6 col-lg-3">
-                  <h3>Let Us Help You</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">100% Purchase Protection</a></li>
-                    <li><a href="#">Your Account</a></li>
-                    <li><a href="#">Return Center</a></li>
-                    <li><a href="#">Help</a></li>
-                  </ul>
-                </div>
-          
-              </div>
             </div>
-          
+    
             <!-- Copyright Section -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2020 by Viraj. Created with Bootstrap.
+                © 2020 by Viraj. Created with Bootstrap.
             </div>
-          </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybU7r7p6Zk3pRfz5O5XkNh4Jti6zF2jwM2v6mFJp+QrxsE/OwCk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0s0vZ08z0N0iCdQ6qz7Fw5WJt+6k8MRWln5D5mT9vcv8v+m0" crossorigin="anonymous"></script>
 </body>
 </html>
