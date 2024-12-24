@@ -5,3 +5,9 @@ This project is a fully responsive and interactive e-commerce website designed f
 - **CSS**: For styling and layout customization.
 - **Bootstrap**: To ensure responsiveness and utilize pre-designed components.
 - **JavaScript**: For dynamic behaviors and interactivity.
+## Output
+
+
+https://github.com/user-attachments/assets/a76da67d-8720-4759-bc0b-954766fd48df
+
+
